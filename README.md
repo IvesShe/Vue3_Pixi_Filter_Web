@@ -192,7 +192,7 @@ function createWave(waveFilter,resetTime){
 
 
 // 監聽點擊事件，根據位置創建震波濾鏡
-app.view.addEventListener("click",(e)=>{
+app.view.addEventListener("pointerdown",(e)=>{
   shockwaveFilter1.center = [e.clientX,e.clientY]
   shockwaveFilter1.time = 0
   console.log("@@@點擊了!!",e.clientX,e.clientY)
